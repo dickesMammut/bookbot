@@ -22,3 +22,7 @@ def get_num_characters() -> Dict[str, int]:
             num_of_characters[c] = 1
 
     return num_of_characters
+
+def get_sorted_dict(num_of_chars: Dict[str, int]) -> list:
+    sorted_chars: list = sorted(num_of_chars.items(), key = lambda item: item[1], reverse = True)
+    return sorted_chars
